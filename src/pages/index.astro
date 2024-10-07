@@ -1,0 +1,22 @@
+---
+import Container from "@/components/Content.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import ThemeToggle from "@/components/ThemeToggle.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+	<Header />
+	<ThemeToggle />
+	<div
+		class="divider mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-secondary"
+	>
+	</div>
+	<main class="mx-auto max-w-3xl overflow-y-scroll py-2 grid w-[95vw]">
+		<div class="container">
+			<Container />
+		</div>
+	</main>
+	<Footer class="flex justify-center items-center py-4" />
+</BaseLayout>

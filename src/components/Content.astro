@@ -1,0 +1,118 @@
+---
+import Accordion from "@/components/ui/Accordion.astro";
+import Card from "@/components/ui/Card.astro";
+import ContactCard from "@/components/ui/ContactCard.astro";
+import Resume from "@/components/Resume.astro";
+
+import about from "@/data/about";
+import experiences from "@/data/experiences";
+import educations from "@/data/educations";
+import projects from "@/data/projects";
+import certificates from "@/data/certificates";
+import blogs from "@/data/blogs";
+import socials from "@/data/socials";
+---
+
+<div class="join join-vertical gap-1">
+	<Accordion title={"About"} icon={"carbon:identification"}>
+		<article class="text-justify">
+			<Fragment set:html={about.content} />
+		</article>
+	</Accordion>
+
+	{
+		experiences.length > 0 && (
+			<Accordion title={"Experience"} icon={"carbon:construction"}>
+				{experiences.map((experience) => (
+					<Card
+						title={experience.title}
+						timeframe={experience.date}
+						description={experience.content}
+						tags={experience.tags}
+						url={experience.url}
+						url_name={experience.organization}
+						location={experience.location}
+					/>
+				))}
+			</Accordion>
+		)
+	}
+
+	<Accordion title={"Education"} icon={"carbon:education"}>
+		{
+			educations.map((education) => (
+				<Card
+					title={education.title}
+					timeframe={education.date}
+					location={education.location}
+					tags={education.tags}
+					url={education.url}
+					url_name={education.organization}
+					description={education.content}
+				/>
+			))
+		}
+	</Accordion>
+
+	<Accordion title={"Projects"} icon={"carbon:tools"}>
+		{
+			projects.map((project) => (
+				<Card
+					title={project.title}
+					timeframe={project.date}
+					description={project.content}
+					tags={project.tags}
+					url={project.url}
+					url_name={"View project"}
+				/>
+			))
+		}
+	</Accordion>
+
+	<Accordion title={"Certifications"} icon={"carbon:certificate"}>
+		{
+			certificates.map((certificate) => (
+				<Card
+					title={certificate.title}
+					timeframe={certificate.date}
+					description={certificate.content}
+					tags={certificate.tags}
+					url={certificate.url}
+					url_name={"View Certificate"}
+				/>
+			))
+		}
+	</Accordion>
+
+	<Accordion title={"Blogs"} icon={"carbon:pen"}>
+		{
+			blogs.map((blog) => (
+				<Card
+					title={blog.title}
+					timeframe={blog.date}
+					description={blog.content}
+					url={blog.url}
+					url_name={blog.url_name}
+				/>
+			))
+		}
+	</Accordion>
+
+	<Accordion title={"Documents"} icon={"carbon:volume-file-storage"}>
+		<Resume />
+	</Accordion>
+
+	<Accordion title={"Socials"} icon={"carbon:location-person"}>
+		<div class="flex flex-wrap content-around gap-4 justify-center">
+			{
+				socials.map((social) => (
+					<ContactCard
+						url={social.url}
+						url_name={social.title}
+						icon={social.icon}
+					/>
+				))
+			}
+		</div>
+	</Accordion>
+</div>

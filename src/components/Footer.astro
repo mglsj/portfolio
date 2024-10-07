@@ -1,0 +1,20 @@
+---
+const getYear = () => new Date().getFullYear().toString();
+---
+
+<footer class="flex justify-center items-center bg-transparent py-4">
+	<p class="flex items-center text-center font-light text-sm text-secondary">
+		<span class="copyleft">&copy;</span>&nbsp;
+		{getYear()}
+		<a target="_blank" class="link ml-1" href="https://github.com/MG-LSJ"
+			>Lakshyajeet Singh Jalal</a
+		>
+	</p>
+</footer>
+
+<style>
+	.copyleft {
+		display: inline-block;
+		transform: rotate(180deg);
+	}
+</style>
