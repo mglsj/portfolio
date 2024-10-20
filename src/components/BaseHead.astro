@@ -1,20 +1,50 @@
+---
+const title = "MGLSJ | Portfolio";
+const author = "MGLSJ";
+const description = "MGLSJ's Portfolio";
+const image = `${Astro.site}/assets/avatar.png`;
+---
+
 <head>
+	<title>{title}</title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="generator" content={Astro.generator} />
+
+	<meta name="description" content={description} />
+	<meta name="author" content={author} />
+	<meta
+		name="keywords"
+		content="MGLSJ, Portfolio, Web Developer, Frontend Developer"
+	/>
+
+	<!-- Open Graph Meta Tags -->
+	<meta property="og:url" content={Astro.site} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content={image} />
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content={Astro.site.hostname} />
+	<meta property="twitter:url" content={Astro.site} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={image} />
+
 	<script is:inline>
 		if (localStorage.getItem("theme") === null) {
 			document.documentElement.setAttribute("data-theme", "lofi");
 		} else
 			document.documentElement.setAttribute(
 				"data-theme",
-				localStorage.getItem("theme")
+				localStorage.getItem("theme"),
 			);
 	</script>
 	<script>
 		import { themeChange } from "theme-change";
 		themeChange();
 	</script>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="generator" content={Astro.generator} />
-	<title>MGLSJ</title>
 </head>
