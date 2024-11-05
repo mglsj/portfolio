@@ -13,7 +13,7 @@ const socials: Social[] = [
 	{
 		title: "GitHub",
 		icon: "carbon:logo-github",
-		url: "https://github.com/MG-LSJ",
+		url: "https://github.com/mglsj",
 	},
 	{
 		title: "LinkedIn",
