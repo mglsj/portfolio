@@ -81,6 +81,11 @@ const socials: Social[] = [
 		url: "https://en.wikipedia.org/wiki/User:Lakshyajeet_Jalal",
 	},
 	{
+		title: "Play Store",
+		icon: "simple-icons:googleplay",
+		url: "https://play.google.com/store/apps/developer?id=MG-LSJ",
+	},
+	{
 		title: "npm",
 		icon: "simple-icons:npm",
 		url: "https://www.npmjs.com/~mglsj",
