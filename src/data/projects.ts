@@ -8,6 +8,22 @@ type Project = {
 
 const projects: Project[] = [
 	{
+		title: "PYQ Archive (GEHU)",
+		date: "Jan 2023 - Present",
+		url: "https://bit.ly/gehupyqs",
+		tags: ["Astro", "Community"],
+		content:
+			"A collection of student contributed previous year question papers for Graphic Era Hill University semester examinations. This is a community driven project and we encourage you to contribute to the project by adding more question papers.",
+	},
+	{
+		title: "RPi 3 OS Kernel (Sem 5 Mini Project)",
+		date: "Aug 2024 - Dec 2024",
+		url: "https://github.com/mglsj/os_kernel",
+		tags: ["C", "Raspberry Pi", "OS Kernel"],
+		content:
+			"Multi programming OS kernel from scratch for Raspberry Pi 3B+, with a FAT 16 File System, GPU rendering, Terminal etc.",
+	},
+	{
 		title: "QR Earth",
 		date: "Jul 2023 - Present",
 		url: "https://play.google.com/store/apps/details?id=org.eu.mglsj.qr_earth&hl=en_US",
@@ -18,9 +34,9 @@ const projects: Project[] = [
     App is live on Play Store.`,
 	},
 	{
-		title: "MOS 6502 CPU Emulator",
+		title: "MOS 6502 CPU Emulator (Sem 4 Mini Project)",
 		date: "Feb 2024 - Jun 2024",
-		url: "https://github.com/MG-LSJ/6502_emulator_flutter",
+		url: "https://github.com/mglsj/6502_emulator_flutter",
 		tags: ["Flutter", "Dart", "Emulator"],
 		content:
 			"An interactive flutter and dart based emulator for MOS 6502 CPU, with code editor and compiler support, memory editor and instruction disassembler.",

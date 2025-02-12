@@ -28,7 +28,7 @@ const socials: Social[] = [
 	{
 		title: "LinkedIn",
 		icon: "simple-icons:linkedin",
-		url: "https://www.linkedin.com/in/lakshyajeet-jalal/",
+		url: "https://www.linkedin.com/in/mglsj",
 	},
 	{
 		title: "X / Twitter",
@@ -38,7 +38,7 @@ const socials: Social[] = [
 	{
 		title: "Instagram",
 		icon: "simple-icons:instagram",
-		url: "https://www.instagram.com/mglsj.gg/",
+		url: "https://www.instagram.com/mglsj.gg",
 	},
 	{
 		title: "Reddit",
