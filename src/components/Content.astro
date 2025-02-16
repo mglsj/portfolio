@@ -10,7 +10,7 @@ import educations from "@/data/educations";
 import projects from "@/data/projects";
 import certificates from "@/data/certificates";
 import blogs from "@/data/blogs";
-import socials from "@/data/socials";
+import socials, { socialsAlt } from "@/data/socials";
 ---
 
 <div class="join join-vertical gap-1">
@@ -108,8 +108,20 @@ import socials from "@/data/socials";
 				socials.map((social) => (
 					<ContactCard
 						url={social.url}
-						url_name={social.title}
-						icon={social.icon}
+						url_name={social.name}
+						icon={social.iconify}
+					/>
+				))
+			}
+		</div>
+		<hr class="my-4" />
+		<div class="flex flex-wrap content-around gap-4 justify-center">
+			{
+				socialsAlt.map((social) => (
+					<ContactCard
+						url={social.url}
+						url_name={social.name}
+						icon={social.iconify}
 					/>
 				))
 			}

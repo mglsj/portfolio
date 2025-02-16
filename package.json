@@ -13,6 +13,7 @@
 		"@astrojs/tailwind": "^6.0.0",
 		"@fontsource-variable/dm-sans": "^5.1.1",
 		"@iconify-json/carbon": "^1.2.6",
+		"@iconify-json/mdi": "^1.2.3",
 		"@iconify-json/simple-icons": "^1.2.24",
 		"astro": "^5.2.6",
 		"astro-compress": "^2.3.6",
