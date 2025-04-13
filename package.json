@@ -10,19 +10,16 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/tailwind": "^6.0.0",
-		"@fontsource-variable/dm-sans": "^5.1.1",
-		"@iconify-json/carbon": "^1.2.6",
+		"@astrojs/tailwind": "^6.0.2",
+		"@fontsource-variable/dm-sans": "^5.2.5",
+		"@iconify-json/carbon": "^1.2.8",
 		"@iconify-json/mdi": "^1.2.3",
-		"@iconify-json/simple-icons": "^1.2.24",
-		"astro": "^5.2.6",
-		"astro-compress": "^2.3.6",
+		"@iconify-json/simple-icons": "^1.2.31",
+		"@tailwindcss/typography": "^0.5.16",
+		"astro": "^5.6.1",
 		"astro-icon": "^1.1.5",
+		"daisyui": "^4.12.24",
 		"tailwindcss": "^3.4.17",
 		"theme-change": "^2.5.0"
-	},
-	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.16",
-		"daisyui": "^4.12.23"
 	}
 }
