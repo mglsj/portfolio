@@ -11,15 +11,18 @@
 	},
 	"dependencies": {
 		"@astrojs/tailwind": "^6.0.2",
-		"@fontsource-variable/dm-sans": "^5.2.5",
-		"@iconify-json/carbon": "^1.2.8",
+		"@fontsource-variable/dm-sans": "^5.2.6",
+		"@iconify-json/carbon": "^1.2.9",
 		"@iconify-json/mdi": "^1.2.3",
-		"@iconify-json/simple-icons": "^1.2.31",
+		"@iconify-json/simple-icons": "^1.2.38",
 		"@tailwindcss/typography": "^0.5.16",
-		"astro": "^5.6.1",
+		"astro": "^5.9.3",
 		"astro-icon": "^1.1.5",
 		"daisyui": "^4.12.24",
 		"tailwindcss": "^3.4.17",
 		"theme-change": "^2.5.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
 	}
 }

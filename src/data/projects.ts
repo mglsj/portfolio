@@ -16,6 +16,14 @@ const projects: Project[] = [
 			"A collection of student contributed previous year question papers for Graphic Era Hill University semester examinations. This is a community driven project and we encourage you to contribute to the project by adding more question papers.",
 	},
 	{
+		title: "Simple NCERT",
+		date: "Dec 2024 - Jan 2025",
+		url: " https://mglsj.eu.org/simple-ncert",
+		tags: ["Astro", "WebAssembly"],
+		content:
+			"A NCERT eBook experience that focuses on accessibility, indexablity, and localization.",
+	},
+	{
 		title: "RPi 3 OS Kernel (Sem 5 Mini Project)",
 		date: "Aug 2024 - Dec 2024",
 		url: "https://github.com/mglsj/os_kernel",
